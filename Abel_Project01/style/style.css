@@ -1,0 +1,198 @@
+
+body {
+     background: black center center no-repeat;
+     background-size: auto;
+     color: white;
+     font-size: 1.0em;
+     line-height: 1.4;
+     font-family: "Trebuchet MS", Geneva, sans-serif
+}
+
+#container {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+/*#page-header {
+    background: black;
+    color: white;
+    overflow: hidden;
+    border-bottom: 1px solid grey;
+    padding: 0 3%;
+    opacity: 0.5;
+    /*position: fixed;*/
+   /* width: 100%;
+    z-index: 1;
+    height: 80px;
+    top: 0px;*/
+
+/*}*/
+
+#game-title {
+  font-family: 'Bangers', cursive, Geneva;
+  font-size: 3em;
+  position: absolute;
+  color: white;
+  opacity: 0.9;
+  text-align: center;
+  text-shadow: 1px 2px 1px black;
+  top: 35%;
+  left: 15%;
+  z-index: 100;
+  -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2.5s; /* Firefox < 16 */
+  -ms-animation: fadein 2.5s; /* Internet Explorer */
+
+}
+
+#questions{
+  font-family: 'Bangers', cursive, Geneva;
+  font-size: 3em;
+  position: absolute;
+  color: white;
+  text-align: center;
+  text-shadow: 4px 3px 2px black;
+  top: 35%;
+  left: 15%;
+  z-index: 100;
+  -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2.5s; /* Firefox < 16 */
+  -ms-animation: fadein 2.5s; /* Internet Explorer */
+}
+
+#final-score{
+  font-family: 'Bangers', cursive, Geneva;
+  font-size: 5em;
+  position: absolute;
+  color: white;
+  text-align: center;
+  text-shadow: 4px 3px 2px black;
+  top: 35%;
+  left: 15%;
+  z-index: 100;
+  -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2.5s; /* Firefox < 16 */
+  -ms-animation: fadein 2.5s; /* Internet Explorer */
+
+}
+
+#results{
+  margin: auto;
+  font-family: 'Bangers', cursive, Geneva;
+  font-size: 4em;
+  position: absolute;
+  color: white;
+  text-align: center;
+  text-shadow: 5px 4px 4px black;
+  top: 35%;
+  left: 15%;
+  z-index: 100;
+  -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2.5s; /* Firefox < 16 */
+  -ms-animation: fadein 2.5s; /* Internet Explorer */
+}
+
+
+/*  font-size: 3.0em;
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  text-shadow: -6px 5px 10px #000;
+  opacity: 0.9;*/
+
+
+section#intro {
+    width: 860px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.75em;
+    text-shadow: -3px 3px 3px #000;
+    font-family: 'Bangers', cursive;
+    color: white;
+    overflow: hidden;
+/*    border-bottom: 1px solid grey;
+    padding: 0 3%;
+    opacity: 0.5;*/
+    /*position: fixed;*/
+
+    z-index: 1;
+    height: auto;
+    /*top: 0px;*/
+
+    }
+
+    #good-luck{
+    margin-top: 20px;
+    font-size: 2.0em;
+    float: right;
+
+    }
+
+    #carrousel img{
+    max-width: 100%;
+    /*max-height: 100%;*/
+    vertical-align: middle;
+    margin-bottom: -60px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    }
+
+    ul{
+    position: relative;
+    transition:all 0.5s;
+
+    }
+
+    li{
+    width: 100%;
+    list-style-type: none;
+    float: left;
+    position: relative;
+    }
+
+
+/*#start-button{
+    background-color: #09551B;
+    /*font-size: 2.0em;*/
+    font-family: 'Bangers', cursive;
+    width: 10.0em;
+    height: 10.0em;
+    border-radius: 50%;
+    opacity: 0.8;
+    text-align: center;
+    box-shadow: 0px 2px 20px #000;
+    border: solid black 2px;
+    margin: auto;
+    position: absolute;
+    left: 550px;
+    right: 550px;
+
+}*/
+
+/*
+footer {
+    background: black;
+    color: white;
+    overflow: hidden;
+    border-bottom: 1px solid grey;
+    padding: 0 3%;
+    opacity: 0.5;
+    /*position: fixed;*/
+    width: 100%;
+    z-index: 1;
+    height: 80px;
+    top: 712px;
+    bottom: 0px;
+    margin: auto;
+    margin-top: 65px;
+  }*/
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
