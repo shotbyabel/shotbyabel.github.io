@@ -89,7 +89,7 @@ body {
 }
 
 #results1{
-    background: url(../img/Results.jpg);
+  background: url(../img/Results.jpg);
   width: 100%;
   height:100vh;
   vertical-align: middle;
@@ -180,6 +180,14 @@ body {
   top:70px;
   right: 20px;
 }
+
+#photo-timer{
+  position: fixed;
+  bottom:70px;
+  left: 20px;
+}
+
+
 /*#page-header {
     background: black;
     color: white;
