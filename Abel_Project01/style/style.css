@@ -14,6 +14,172 @@ body {
   position: relative;
 }
 
+#start{
+  background: url(../img/PhotoTitle.jpg);
+  width: 100%;
+  height:100vh;
+  vertical-align: middle;
+  text-align: center;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#photo1{
+  background: url(../img/Photo01.jpg);
+  width: 100%;
+  height:100vh;
+  vertical-align: middle;
+  text-align: center;
+  display: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#photo2{
+  background: url(../img/Photo02.jpg);
+  width: 100%;
+  height:100vh;
+  vertical-align: middle;
+  text-align: center;
+  display: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+#photo3{
+  background: url(../img/Photo03.jpg);
+  width: 100%;
+  height:100vh;
+  vertical-align: middle;
+  text-align: center;
+  display: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+#photo4{
+  background: url(../img/Photo04.jpg);
+  width: 100%;
+  height:100vh;
+  vertical-align: middle;
+  text-align: center;
+  display: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+#photo5{
+  background: url(../img/Photo05.jpg);
+  width: 100%;
+  height:100vh;
+  vertical-align: middle;
+  text-align: center;
+  display: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+#results1{
+    background: url(../img/Results.jpg);
+  width: 100%;
+  height:100vh;
+  vertical-align: middle;
+  text-align: center;
+  display: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#results2{
+    background: url(../img/Results.jpg);
+  width: 100%;
+  height:100vh;
+  vertical-align: middle;
+  text-align: center;
+  display: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#results3{
+    background: url(../img/Results.jpg);
+  width: 100%;
+  height:100vh;
+  vertical-align: middle;
+  text-align: center;
+  display: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#results4{
+    background: url(../img/Results.jpg);
+  width: 100%;
+  height:100vh;
+  vertical-align: middle;
+  text-align: center;
+  display: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#results5{
+    background: url(../img/Results.jpg);
+  width: 100%;
+  height:100vh;
+  vertical-align: middle;
+  text-align: center;
+  display: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#gameover{
+  background: url(../img/FinalScore.jpg);
+  width: 100%;
+  height:100vh;
+  vertical-align: middle;
+  text-align: center;
+  display: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+
+.text-style{
+  font-family: 'Bangers', cursive, Geneva;
+  font-size: 3em;
+  position: absolute;
+  color: white;
+  opacity: 0.9;
+  text-shadow: 1px 2px 1px black;
+  -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2.5s; /* Firefox < 16 */
+  -ms-animation: fadein 2.5s; /* Internet Explorer */
+
+}
+
+#game-timer{
+  position: fixed;
+  top:70px;
+  right: 20px;
+}
 /*#page-header {
     background: black;
     color: white;
@@ -152,13 +318,13 @@ section#intro {
     position: relative;
     }
 
-
-/*#start-button{
+/*
+    #begin-button{
     background-color: #09551B;
     /*font-size: 2.0em;*/
     font-family: 'Bangers', cursive;
-    width: 10.0em;
-    height: 10.0em;
+    width: 8.0em;
+    height: 8.0em;
     border-radius: 50%;
     opacity: 0.8;
     text-align: center;
@@ -169,8 +335,8 @@ section#intro {
     left: 550px;
     right: 550px;
 
-}*/
-
+    }
+*/
 /*
 footer {
     background: black;
