@@ -8,7 +8,7 @@ $(".start-trigger").click(function(){
 });
 
 // Storing the starting time in seconds into startTime variable.
-var startTime = 40;
+var startTime = 60;
 $("#game-timer").text(startTime);
 
 // Function that decreases the timer by 1 second.
@@ -37,28 +37,46 @@ function decreasePhotoTimer(){
   }
 }
 
-  //if start time reaches 0 seconds. stop timer and announce "game over"
+//creating photos & results arrays
 
-    // var carrousel = function(){
+var photos = ["#photo1","#photo2","#photo3","#photo4","#photo5"];
+var results = ["#results1","#results2","#results3","#results4","#results5"];
 
-    //   var carrousel = this;
-    //   var wrapper = carrousel.children[0];
-    //   var slides = wrapper.children;
-    //   var position = 0;
+// console.log(results[0]);
 
-    //   var startButton
-    //   var answerA
-    //   var answerB
+//object array//
+
+    score = 0;
+
+    titlePhoto = "url../img/PhotoTitle.jpg";
+    qAphoto = "url../img/Results.jpg)";
+    scorePhoto = "url../img/FinalScore.jpg";
+  
+      quizPhotos = [
+
+      { url:"../img/Photo01.jpg";
+        question:"What color was the bottle?";
+        a:"White";
+        b:"Dark";
+        answer:"Dark";
+
+    }
+    
+      { url:"../img/Photo02.jpg";
+        question:"what was hanging from the window?";
+        a:"a flag";
+        b:"laundry";
+        answer:"laundry";
+
+      }
 
 
-    //   var count = 0;
-    //   console.log(wrapper);
-      // setInterval(function (){
 
-      //   // if(count === slides.lengh){
+        ]
 
-      //   // }
-      // };
+
+
+
 
 
 
