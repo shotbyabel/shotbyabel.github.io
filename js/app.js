@@ -4,6 +4,8 @@ var score = 0;
 var titlePhoto = "../img/PhotoTitle.jpg";
 var scorePhoto = "../img/FinalScore.jpg";
 
+var currentQuizPhoto = 0;
+
 // TODO: Final Results Photo with add core tally 
 //       and Play Again to this array?
 var quizPhotos = [
@@ -57,29 +59,41 @@ var isRight = function(photoNumber, answer) {
 
 // the click fucntion hides the title photo and shows 
 // the 1st quiz photo (ID of "photo1")
-var hideTitleShowPhoto = function() {
+var hideTitleShowMemoPhoto = function() {
   $(".title-photo-template").hide();
   $(".memo-photo-template").show();
 };
 
-var hideMemoPhotoShowQNA = function() {
-  $(".memo-photo-template").hide();
-  $(".qna-photo-template").show();
-};
+/* UPDATE MEMO PHOTO FUNCTIONS */
 
 var hideQNAShowMemoPhoto = function(){
   $(".qna-photo-template").hide();
   $(".memo-photo-template").show();
+  // add the correct image class for the current quiz photo
+  $(".memo-photo-template").removeClass("photo" + currentQuizPhoto);
+  currentQuizPhoto = currentQuizPhoto + 1;
+  $(".memo-photo-template").addClass("photo" + currentQuizPhoto);
 };
 
-// update memo photo class
-var nextMemoPhoto = function(){
-  $(".photo1").removeClass("photo1").addClass("photo2");  
+/* UPDATE QNA PHOTO FUNCTIONS */
+
+var hideMemoPhotoShowQNA = function() {
+  $(".memo-photo-template").hide();
+  $(".qna-photo-template").show();
+  // 1. update question
+  $("#question").text(quizPhotos[currentQuizPhoto].question);
+  // 2. update a
+  $("#a").text(quizPhotos[currentQuizPhoto].a);
+  // 3. update b
+  $("#b").text(quizPhotos[currentQuizPhoto].b);
+  // 4. reset "answer"
+  $("#answer").text("?");
 };
+
 
 // this is what happens when I click on an answer choice
 var clickOnChoice = function () {
-  if (isRight(0, this.id)) {
+  if (isRight(currentQuizPhoto, this.id)) {
     $("#answer").text("Correct! (Click for next photo)");
   } else {
     $("#answer").text("Wrong! (Click for next photo)");
@@ -88,7 +102,7 @@ var clickOnChoice = function () {
 
 $(function() {
   // when i click on "start game"
-  $(".start-trigger").on("click", hideTitleShowPhoto);
+  $(".start-trigger").on("click", hideTitleShowMemoPhoto);
 
   // when i click on a memo photo i go to a qna photo
   $(".memo-photo-template").on("click", function() {
@@ -101,6 +115,5 @@ $(function() {
   // on clicking the answer, we:
   //  1. update the memo photo class
   //  2. switch back to memo photo
-  $("#answer").on("click", nextMemoPhoto);
   $("#answer").on("click", hideQNAShowMemoPhoto);
 });

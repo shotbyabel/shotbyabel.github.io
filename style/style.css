@@ -74,11 +74,11 @@ body {
 
 /* UNIQUE QUESTIONS MAY HAVE UNIQUE PHOTOS */
 
-.photo1 { background-image: url(../img/Photo01.jpg); }
-.photo2 { background-image: url(../img/Photo02.jpg); }
-.photo3 { background-image: url(../img/Photo03.jpg); }
-.photo4 { background-image: url(../img/Photo04.jpg); }
-.photo5 { background-image: url(../img/Photo05.jpg); }
+.photo0 { background-image: url(../img/Photo01.jpg); }
+.photo1 { background-image: url(../img/Photo02.jpg); }
+.photo2 { background-image: url(../img/Photo03.jpg); }
+.photo3 { background-image: url(../img/Photo04.jpg); }
+.photo4 { background-image: url(../img/Photo05.jpg); }
 
 .qna1 { /* ... */ }
 .qna2 { /* ... */ }
