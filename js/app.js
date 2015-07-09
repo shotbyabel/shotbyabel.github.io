@@ -49,6 +49,12 @@ var quizPhotos = [
   }
 ];
 
+// check if answer is right or wrong
+var isRight = function(photoNumber, answer) {
+  return answer === quizPhotos[photoNumber].answer;
+};
+
+
 // the click fucntion hides the title photo and shows 
 // the 1st quiz photo (ID of "photo1")
 var hideTitleShowPhoto = function() {
@@ -56,38 +62,45 @@ var hideTitleShowPhoto = function() {
   $(".memo-photo-template").show();
 };
 
-var hidePhotoShowQNA = function() {
+var hideMemoPhotoShowQNA = function() {
   $(".memo-photo-template").hide();
   $(".qna-photo-template").show();
 };
 
-var hideQnAshowMemoPhoto = function(){
+var hideQNAShowMemoPhoto = function(){
   $(".qna-photo-template").hide();
   $(".memo-photo-template").show();
-  console.log("click");
 };
 
-$("#answer").on("click",hideQnAshowMemoPhoto);
-
-// check if answer is right or wrong
-var isRight = function(photoNumber, answer) {
-  return answer === quizPhotos[photoNumber].answer;
+// update memo photo class
+var nextMemoPhoto = function(){
+  $(".photo1").removeClass("photo1").addClass("photo2");  
 };
 
 // this is what happens when I click on an answer choice
-$(".choice").on("click", function () {
+var clickOnChoice = function () {
   if (isRight(0, this.id)) {
     $("#answer").text("Correct! (Click for next photo)");
   } else {
     $("#answer").text("Wrong! (Click for next photo)");
   }
-});
+}
 
 $(function() {
+  // when i click on "start game"
   $(".start-trigger").on("click", hideTitleShowPhoto);
 
   // when i click on a memo photo i go to a qna photo
   $(".memo-photo-template").on("click", function() {
-    hidePhotoShowQNA();
+    hideMemoPhotoShowQNA();
   });
+
+  // when i click on a choice...
+  $(".choice").on("click", clickOnChoice);
+
+  // on clicking the answer, we:
+  //  1. update the memo photo class
+  //  2. switch back to memo photo
+  $("#answer").on("click", nextMemoPhoto);
+  $("#answer").on("click", hideQNAShowMemoPhoto);
 });
