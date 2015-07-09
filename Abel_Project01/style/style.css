@@ -88,10 +88,23 @@ body {
 
 }
 
-#results1{
+#photo{
   background: url(../img/Results.jpg);
   width: 100%;
   height:100vh;
+  vertical-align: middle;
+  text-align: center;
+  display: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#results1{
+  background: url(../img/Results.jpg);
+  width: 100%;
+ /* height:100vh;*/
+ height: 600px;
   vertical-align: middle;
   text-align: center;
   display: none;
