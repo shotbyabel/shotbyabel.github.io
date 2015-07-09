@@ -56,10 +56,16 @@ var hideTitleShowPhoto = function() {
   $(".memo-photo-template").show();
 };
 
-// TODO: write functions that adds a photo on page.. 
-//       and click events?
-
+var hidePhotoShowQNA = function() {
+  $(".memo-photo-template").hide();
+  $(".qna-photo-template").show();
+};
 
 $(function() {
   $(".start-trigger").on("click", hideTitleShowPhoto);
+
+  // when i click on a memo photo i go to a qna photo
+  $(".memo-photo-template").on("click", function() {
+    hidePhotoShowQNA();
+  });
 });
