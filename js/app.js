@@ -13,7 +13,7 @@ var quizPhotos = [
     question:   "What color was the bottle?",
     a: "white",
     b: "dark",
-    answer: "b"
+    answer: "a"
   },
   {
     memoPhoto:  "../img/Photo02.jpg",
@@ -60,6 +60,28 @@ var hidePhotoShowQNA = function() {
   $(".memo-photo-template").hide();
   $(".qna-photo-template").show();
 };
+
+var hideQnAshowMemoPhoto = function(){
+  $(".qna-photo-template").hide();
+  $(".memo-photo-template").show();
+  console.log("click");
+};
+
+$("#answer").on("click",hideQnAshowMemoPhoto);
+
+// check if answer is right or wrong
+var isRight = function(photoNumber, answer) {
+  return answer === quizPhotos[photoNumber].answer;
+};
+
+// this is what happens when I click on an answer choice
+$(".choice").on("click", function () {
+  if (isRight(0, this.id)) {
+    $("#answer").text("Correct! (Click for next photo)");
+  } else {
+    $("#answer").text("Wrong! (Click for next photo)");
+  }
+});
 
 $(function() {
   $(".start-trigger").on("click", hideTitleShowPhoto);
