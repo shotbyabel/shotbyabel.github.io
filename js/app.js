@@ -50,25 +50,17 @@ var quizPhotos = [
   }
 ];
 
-//MADE QUESTION APPEARS WITH PHIL
-var count = 0;
-var quizQnAresults = function() {
-  // //when i call this function I want to change the image 
-  // console.log(quizPhotos);
-  var question = quizPhotos[count].question;
-  // grab the question and need to put it in my html
-  $("#question").text(question);
-}
+// the click fucntion hides the title photo and shows 
+// the 1st quiz photo (ID of "photo1")
+var hideTitleShowPhoto = function() {
+  $("#title").hide();
+  $("#photo1").show();
+};
 
 // TODO: write functions that adds a photo on page.. 
 //       and click events?
 
-$(function() {
-  //the click fucntion hides the title photo and shows the 1st quiz photo (ID of "photo1")
-  $(".start-trigger").on("click", function() {
-    $("#title").hide();
-    $("#photo1").show();
-  });
 
-  $("#next-photo").on("click", quizQnAresults);
+$(function() {
+  $(".start-trigger").on("click", hideTitleShowPhoto);
 });
