@@ -52,8 +52,8 @@ var quizPhotos = [
 // the click fucntion hides the title photo and shows 
 // the 1st quiz photo (ID of "photo1")
 var hideTitleShowPhoto = function() {
-  $("#title").hide();
-  $("#photo1").show();
+  $(".title-photo-template").hide();
+  $(".memo-photo-template").show();
 };
 
 // TODO: write functions that adds a photo on page.. 

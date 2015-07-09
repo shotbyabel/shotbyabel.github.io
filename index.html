@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/style.css">
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- TODO: ADD TIMERS BACK IN! -->
   <!-- <script src="js/timers.js"></script> -->
 </head>
 
@@ -19,42 +20,39 @@
   <div class="text-style" id="game-timer"></div>
   <div class="text-style" id="photo-timer"></div>
   
-  <div id="title">
-    <p class="text-style" id="start-message"><a class="start-trigger">START GAME NOW!</a></p>
+  <!-- TITLE PHOTO TEMPLATE -->
+  <div class="hero-image title-photo-template">
+    <p class="text-style" id="start-message">
+      <a class="start-trigger">START GAME NOW!</a>
+    </p>
     <div class="instructions text-style">
       <p>You will have 4 seconds to view the upcoming photos, and remember as much as you can about them.</p>
       <p>After 4 seconds, the photo will disappear, and you will have a multiple choice question about it.</p>
       <p>Good luck!</p>
     </div>
   </div>
-  
-  <div id="photo1"></div>
-  <!-- Added to append object elements to the DOM -->
-  <div id="qNa-results1">
-    <div <!-- id="photo"> -->
+
+  <!-- MEMO PHOTO TEMPLATE -->
+  <div class="hero-image memo-photo-template photo1"></div>
+
+  <!-- QNA PHOTO TEMPLATE -->
+  <div class="hero-image qna-photo-template qna1">
       <h2 id="question">question?</h2>
       <h2 id="a">a</h2>
       <h2 id="b">b</h2>
       <h2 id="answer">correct-answer</h2>
-    </div>
-    <div>
-      <a id="next-photo">NEXT PHOTO!</a>
-    </div>
-    <!-- end section to append to the DOM -->
+      <div>
+        <a id="next-photo">NEXT PHOTO!</a>
+      </div>
   </div>
-  <div id="photo2"></div>
-  <div id="results2">
+  
+  <!-- FINAL SCORE TEMPLATE -->
+  <div class="hero-image final-score-template">
     <p class="text-style" id="question2"></p>
     <p class="text-style" id="answers3"></p>
     <p class="text-style" id="answers4"></p>
   </div>
-  <div id="photo3"></div>
-  <div id="results3"></div>
-  <div id="photo4"></div>
-  <div id="results4"></div>
-  <div id="photo5"></div>
-  <div id="results5"></div>
-  <div id="gameover"></div>
+
   <script src="js/app.js"></script>
 </body>
 

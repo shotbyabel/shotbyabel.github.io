@@ -1,173 +1,18 @@
-body {
-  background: black center center no-repeat;
-  background-size: auto;
-  color: white;
-  font-size: 1.0em;
-  line-height: 1.4;
-  font-family: "Trebuchet MS", Geneva, sans-serif
-}
-
+html,
+body,
 #container {
+  height: 100%;
   width: 100%;
   margin: auto;
   position: relative;
 }
 
-#title {
-  background: url(../img/PhotoTitle.jpg);
-  width: 100%;
-  height: 100vh;
-  vertical-align: middle;
-  text-align: center;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#photo1 {
-  background: url(../img/Photo01.jpg);
-  width: 100%;
-  height: 100vh;
-  vertical-align: middle;
-  text-align: center;
-  display: none;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#photo2 {
-  background: url(../img/Photo02.jpg);
-  width: 100%;
-  height: 100vh;
-  vertical-align: middle;
-  text-align: center;
-  display: none;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#photo3 {
-  background: url(../img/Photo03.jpg);
-  width: 100%;
-  height: 100vh;
-  vertical-align: middle;
-  text-align: center;
-  display: none;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#photo4 {
-  background: url(../img/Photo04.jpg);
-  width: 100%;
-  height: 100vh;
-  vertical-align: middle;
-  text-align: center;
-  display: none;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#photo5 {
-  background: url(../img/Photo05.jpg);
-  width: 100%;
-  height: 100vh;
-  vertical-align: middle;
-  text-align: center;
-  display: none;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#photo {
-  background: url(../img/Results.jpg);
-  width: 100%;
-  height: 100vh;
-  vertical-align: middle;
-  text-align: center;
-  display: none;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#qNa-results1 {
-  background: url(../img/Results.jpg);
-  width: 100%;
-  /* height:100vh;*/
-  
-  height: 600px;
-  vertical-align: middle;
-  text-align: center;
-  display: none;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#results2 {
-  background: url(../img/Results.jpg);
-  width: 100%;
-  height: 100vh;
-  vertical-align: middle;
-  text-align: center;
-  display: none;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#results3 {
-  background: url(../img/Results.jpg);
-  width: 100%;
-  height: 100vh;
-  vertical-align: middle;
-  text-align: center;
-  display: none;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#results4 {
-  background: url(../img/Results.jpg);
-  width: 100%;
-  height: 100vh;
-  vertical-align: middle;
-  text-align: center;
-  display: none;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#results5 {
-  background: url(../img/Results.jpg);
-  width: 100%;
-  height: 100vh;
-  vertical-align: middle;
-  text-align: center;
-  display: none;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#gameover {
-  background: url(../img/FinalScore.jpg);
-  width: 100%;
-  height: 100vh;
-  vertical-align: middle;
-  text-align: center;
-  display: none;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+body {
+  background: black center center no-repeat;
+  color: white;
+  font-size: 1.0em;
+  line-height: 1.4;
+  font-family: "Trebuchet MS", Geneva, sans-serif
 }
 
 .text-style {
@@ -187,6 +32,62 @@ body {
   /* Internet Explorer */
 }
 
+.instructions {
+  font-size: 2em;
+  position: absolute;
+  top: 150px;
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+}
+
+/* ALL PAGES SHARE THE SAME HERO IMAGE STRUCTURE */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* EACH TYPE OF PAGE HAS A TEMPLATE */
+.title-photo-template {
+  background-image: url(../img/PhotoTitle.jpg);
+}
+
+.memo-photo-template {
+  display: none;
+}
+
+.qna-photo-template {
+  background-image: url(../img/Results.jpg);
+  /*height: 600px;*/
+  display: none;
+}
+
+.final-score-template {
+  background-image: url(../img/FinalScore.jpg);
+  display: none;
+}
+
+/* UNIQUE QUESTIONS MAY HAVE UNIQUE PHOTOS */
+
+.photo1 { background-image: url(../img/Photo01.jpg); }
+.photo2 { background-image: url(../img/Photo02.jpg); }
+.photo3 { background-image: url(../img/Photo03.jpg); }
+.photo4 { background-image: url(../img/Photo04.jpg); }
+.photo5 { background-image: url(../img/Photo05.jpg); }
+
+.qna1 { /* ... */ }
+.qna2 { /* ... */ }
+.qna3 { /* ... */ }
+.qna4 { /* ... */ }
+.qna5 { /* ... */ }
+
+/* TIMERS */
+
 #game-timer {
   position: fixed;
   top: 70px;
@@ -198,6 +99,7 @@ body {
   bottom: 70px;
   left: 20px;
 }
+
 /*#page-header {
     background: black;
     color: white;
@@ -212,95 +114,8 @@ body {
     top: 0px;*/
 /*}*/
 
-#game-title {
-  font-family: 'Bangers', cursive, Geneva;
-  font-size: 3em;
-  position: absolute;
-  color: white;
-  opacity: 0.9;
-  text-align: center;
-  text-shadow: 1px 2px 1px black;
-  top: 35%;
-  left: 15%;
-  z-index: 100;
-  -webkit-animation: fadein 2.5s;
-  /* Safari, Chrome and Opera > 12.1 */
-  
-  -moz-animation: fadein 2.5s;
-  /* Firefox < 16 */
-  
-  -ms-animation: fadein 2.5s;
-  /* Internet Explorer */
-}
 
-#questions {
-  font-family: 'Bangers', cursive, Geneva;
-  font-size: 3em;
-  position: absolute;
-  color: white;
-  text-align: center;
-  text-shadow: 4px 3px 2px black;
-  top: 35%;
-  left: 15%;
-  z-index: 100;
-  -webkit-animation: fadein 2.5s;
-  /* Safari, Chrome and Opera > 12.1 */
-  
-  -moz-animation: fadein 2.5s;
-  /* Firefox < 16 */
-  
-  -ms-animation: fadein 2.5s;
-  /* Internet Explorer */
-}
-
-#final-score {
-  font-family: 'Bangers', cursive, Geneva;
-  font-size: 5em;
-  position: absolute;
-  color: white;
-  text-align: center;
-  text-shadow: 4px 3px 2px black;
-  top: 35%;
-  left: 15%;
-  z-index: 100;
-  -webkit-animation: fadein 2.5s;
-  /* Safari, Chrome and Opera > 12.1 */
-  
-  -moz-animation: fadein 2.5s;
-  /* Firefox < 16 */
-  
-  -ms-animation: fadein 2.5s;
-  /* Internet Explorer */
-}
-
-#results {
-  margin: auto;
-  font-family: 'Bangers', cursive, Geneva;
-  font-size: 4em;
-  position: absolute;
-  color: white;
-  text-align: center;
-  text-shadow: 5px 4px 4px black;
-  top: 35%;
-  left: 15%;
-  z-index: 100;
-  -webkit-animation: fadein 2.5s;
-  /* Safari, Chrome and Opera > 12.1 */
-  
-  -moz-animation: fadein 2.5s;
-  /* Firefox < 16 */
-  
-  -ms-animation: fadein 2.5s;
-  /* Internet Explorer */
-}
-/*  font-size: 3.0em;
-  font-family: 'Bangers', cursive;
-  text-align: center;
-  text-shadow: 1px 1px 1px #000;
-  text-shadow: -6px 5px 10px #000;
-  opacity: 0.9;*/
-
-section#intro {
+/*section#intro {
   width: 860px;
   margin: auto;
   text-align: center;
@@ -309,93 +124,12 @@ section#intro {
   font-family: 'Bangers', cursive;
   color: white;
   overflow: hidden;
-  /*    border-bottom: 1px solid grey;
-    padding: 0 3%;
-    opacity: 0.5;*/
-  /*position: fixed;*/
-  
   z-index: 1;
   height: auto;
-  /*top: 0px;*/
-}
+}*/
 
-#good-luck {
+/*#good-luck {
   margin-top: 20px;
   font-size: 2.0em;
   float: right;
-}
-
-#carrousel img {
-  max-width: 100%;
-  /*max-height: 100%;*/
-  
-  vertical-align: middle;
-  margin-bottom: -60px;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-
-.instructions {
-  font-size: 2em;
-  position: absolute;
-  top: 150px;
-  width: 600px;
-  left: 50%;
-  margin-left: -300px;
-}
-
-ul {
-  position: relative;
-  transition: all 0.5s;
-}
-
-li {
-  width: 100%;
-  list-style-type: none;
-  float: left;
-  position: relative;
-}
-/*
-    #begin-button{
-    background-color: #09551B;
-    /*font-size: 2.0em;*/
-
-/*font-family: 'Bangers',
-cursive;
-width: 8.0em;
-height: 8.0em;
-border-radius: 50%;
-opacity: 0.8;
-text-align: center;
-box-shadow: 0px 2px 20px #000;
-border: solid black 2px;
-margin: auto;
-position: absolute;
-left: 550px;
-right: 550px;
-}
-*/
-/*
-footer {
-    background: black;
-    color: white;
-    overflow: hidden;
-    border-bottom: 1px solid grey;
-    padding: 0 3%;
-    opacity: 0.5;
-    /*position: fixed;*/
-
-/*width: 100%;
-z-index: 1;
-height: 80px;
-top: 712px;
-bottom: 0px;
-margin: auto;
-margin-top: 65px;
-}
-*/
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+}*/
