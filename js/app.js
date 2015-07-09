@@ -22,7 +22,6 @@ var quizPhotos = [
     a: "a flag",
     b: "laundry",
     answer: "b"
-
   },
   {
     memoPhoto:  "../img/Photo03.jpg",

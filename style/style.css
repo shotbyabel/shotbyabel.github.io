@@ -336,6 +336,16 @@ section#intro {
   position: relative;
 }
 
+
+.instructions {
+  font-size: 2em;
+  position: absolute;
+  top: 150px;
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+}
+
 ul {
   position: relative;
   transition: all 0.5s;
@@ -352,7 +362,7 @@ li {
     background-color: #09551B;
     /*font-size: 2.0em;*/
 
-font-family: 'Bangers',
+/*font-family: 'Bangers',
 cursive;
 width: 8.0em;
 height: 8.0em;
@@ -377,7 +387,7 @@ footer {
     opacity: 0.5;
     /*position: fixed;*/
 
-width: 100%;
+/*width: 100%;
 z-index: 1;
 height: 80px;
 top: 712px;

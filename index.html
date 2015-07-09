@@ -12,15 +12,22 @@
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/style.css">
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="js/timers.js"></script>
+  <!-- <script src="js/timers.js"></script> -->
 </head>
 
 <body>
   <div class="text-style" id="game-timer"></div>
   <div class="text-style" id="photo-timer"></div>
+  
   <div id="title">
-    <p class="text-style" id="start-message"> <a class="start-trigger">START GAME NOW!</a></p>
+    <p class="text-style" id="start-message"><a class="start-trigger">START GAME NOW!</a></p>
+    <div class="instructions text-style">
+      <p>You will have 4 seconds to view the upcoming photos, and remember as much as you can about them.</p>
+      <p>After 4 seconds, the photo will disappear, and you will have a multiple choice question about it.</p>
+      <p>Good luck!</p>
+    </div>
   </div>
+  
   <div id="photo1"></div>
   <!-- Added to append object elements to the DOM -->
   <div id="qNa-results1">
