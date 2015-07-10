@@ -116,4 +116,7 @@ $(function() {
   //  1. update the memo photo class
   //  2. switch back to memo photo
   $("#answer").on("click", hideQNAShowMemoPhoto);
+
+  //when i click on last photo's 'answer'
+
 });
