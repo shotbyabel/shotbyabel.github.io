@@ -24,7 +24,7 @@ I used Google Fonts "Bangers"
 I used my own personal photos as the main design. At least something will look good :)
 
 ###Getting Started (unboxing)
-Shake your computer for 10 seconds and place on a firm table. Go to my github i.o link.
+Shake your computer for 10 seconds and place on a firm table. Go to my github (http://shotbyabel.github.io/) i.o link.
 1. The purpose of the game is to look at 5 different photographs and try to remember as many details about them.
 2. You have 4 seconds to view it before it switches to a question about the photo.
 3. There will be multple choice of A and B answers.
